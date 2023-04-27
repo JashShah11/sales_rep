@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sales_rep/screens/account_details.dart';
+import 'package:sales_rep/screens/calendar.dart';
 import 'package:sales_rep/screens/customer_details.dart';
 import 'package:sales_rep/screens/homepage.dart';
 import 'package:sales_rep/screens/login_screen.dart';
@@ -85,11 +86,11 @@ class GlobalVariable{
           ),
           ListTile(
             leading: Icon(
-              Icons.shopping_cart,
+              Icons.calendar_month,
             ),
-            title: const Text('Shopping cart'),
+            title: const Text('Events '),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>CalendarApp()));
             },
           ),
           ListTile(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sales_rep/lib/controller.dart';
 
 import '../controller.dart';
 import '../model/Global_variables.dart';
